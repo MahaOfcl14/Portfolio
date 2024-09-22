@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!--Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!--Tailwind-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="home">
+
+    <!--Head Section-->
+    <!--Navbar-->
+    <!--Nav-->
+    <div class="hidden md:block bg-[#21002B]">
+        <div class="w-[90%] md:w-[60%] mx-auto grid grid-cols-1 py-4 ">
+            <div>
+                <ul class="flex justify-around py-3 font-[poppins] text-white font-normal">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#project">Project</a></li>
+                    <li><a href="https://ik.imagekit.io/ajql7av7t/Maha.pdf">Resume</a></li>
+                    <li><a href="#contact Me">Contact Me</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--Nav-->
+    <div class="fixed top-0 bg-[#21002B] w-[100%] h-[60px] md:hidden ">
+        <div class="w-[90%] md:w-[60%] mx-auto grid grid-cols-1 py-4">
+            <div>
+                <ul class="flex justify-around py-1 font-[poppins] text-white">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#project">Project</a></li>
+                    <li><a href="https://ik.imagekit.io/ajql7av7t/Maha.pdf">Resume</a></li>
+                    <li><a href="./contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!--Navbar Ends here-->
+
+    <!--Container-->
+    <section class="home" id="home">
+        <div class="2xl:container mx-auto mt-[50px]">
+            <!--Safety Container-->
+            <div class="w-[80%] mx-auto grid grid-cols-1 md:grid-cols-2 ">
+
+                <div class="pl-20 py-5 pt-2 flex flex-col justify-center">
+
+                    <h3 class="font-[Poppins] text-[30px] font-normal text-[white]">Hi There, It's me</h3>
+                    <h1 class="font-[poppins] text-[30px] font-medium text-[#C8F31D]">Mahalakshmi</h1>
+                  <!--<p class="font-[poppins] text-[25px] font-bold text-[#68ebff]">A passionate Front-end Developer</p>-->
+                  <div id="role-text" class="font-[poppins] text-[25px] font-bold text-[#68ebff] transition-all ease-in-out duration-1000">
+                    A passionate Front-end Developer
+                  </div>
+                  
+                  <script>
+                    const roles = [
+                      'A passionate Front-end Developer',
+                      'A creative UI-UX Designer',
+                      'A dedicated Mobile Application Developer'
+                    ];
+                    let index = 0;
+                  
+                    function changeRole() {
+                      const roleTextElement = document.getElementById('role-text');
+                      
+                      // Fade out
+                      roleTextElement.classList.add('opacity-0');
+                      
+                      setTimeout(() => {
+                        // Change text after fade-out
+                        roleTextElement.textContent = roles[index];
+                        roleTextElement.classList.remove('opacity-0'); // Fade in
+                  
+                        // Move to the next role
+                        index = (index + 1) % roles.length;
+                      }, 500); // Duration should match Tailwind transition timing
+                    }
+                  
+                    // Change text every 3 seconds
+                    setInterval(changeRole, 3000);
+                  </script>
+                  
+                    <div class="py-8">
+                        <a href="#contact Me">
+                            <button
+                                class="hidden md:inline-block bg-[#22C55E] font-bold text-white py-2 px-6 rounded-lg">
+                                Contact Me
+                            </button>
+                        </a>
+                        <a href="https://ik.imagekit.io/ajql7av7t/Maha.pdf"><button
+                                class="bg-[#A855F7] font-bold text-white py-2 px-6 rounded-lg mx-4">View
+                                Resume</button></a>
+                    </div>
+
+
+                </div>
+                <div class="flex flex-row justify-center">
+                    <img src="https://ik.imagekit.io/ajql7av7t/Untitled%20design%20(2).png" class="h-[320px]"
+                        alt="My image" />
+                </div>
+            </div>
+    </section>
+    <!--Head Section completed-->
+
+
+    <section id="skills">
+
+        <div class="2xl:container mx-auto mt-[50px]">
+            <!--Safety Container-->
+            <div class="w-[80%] mx-auto grid grid-cols-1 md:grid-cols-2">
+
+                <div class="bg-img  shadow-xl">
+                    <div class="max-w-lg mx-auto">
+                        <h1 class="font-[poppins] text-[30px] font-bold text-[#C8F31D] text-center pt-5">Technical
+                            Skills</h1>
+
+                        <!-- Skill 1 -->
+                        <div class="mb-6 mt-7">
+                            <div class="flex justify-between mb-1">
+                                <span class="text-lg font-semibold text-white font-[poppins]">
+
+
+                                    HTML
+                                </span>
+                                <span class="text-sm font-medium text-white font-[poppins]">90%</span>
+                            </div>
+                            <div class="w-full bg-gray-300 rounded-full h-4">
+                                <div class="bg-blue-600 h-4 rounded-full" style="width: 90%;"></div>
+                            </div>
+                        </div>
+
+                        <!-- Skill 2 -->
+                        <div class="mb-6">
+                            <div class="flex justify-between mb-1">
+                                <span class="text-lg font-semibold  text-white font-[poppins]">CSS</span>
+                                <span class="text-sm font-medium text-white font-[poppins]">80%</span>
+                            </div>
+                            <div class="w-full bg-gray-300 rounded-full h-4">
+                                <div class="bg-green-600 h-4 rounded-full" style="width: 80%;"></div>
+                            </div>
+                        </div>
+
+                        <!-- Skill 3 -->
+                        <div class="mb-6">
+                            <div class="flex justify-between mb-1">
+                                <span class="text-lg font-semibold  text-white font-[poppins]">JavaScript</span>
+                                <span class="text-sm font-medium text-white font-[poppins]">75%</span>
+                            </div>
+                            <div class="w-full bg-gray-300 rounded-full h-4">
+                                <div class="bg-yellow-500 h-4 rounded-full" style="width: 75%;"></div>
+                            </div>
+                        </div>
+
+                        <!-- Skill 4 -->
+                        <div class="mb-6">
+                            <div class="flex justify-between mb-1">
+                                <span class="text-lg font-semibold  text-white font-[poppins]">React JS</span>
+                                <span class="text-sm font-medium text-white font-[poppins]">70%</span>
+                            </div>
+                            <div class="w-full bg-gray-300 rounded-full h-4">
+                                <div class="bg-orange-400 h-4 rounded-full" style="width: 70%;"></div>
+                            </div>
+                        </div>
+
+                        <!-- Skill 5 
+                  <div class="w-full bg-gray-300 rounded-full h-4">
+                        <div class="bg-teal-600 h-4 rounded-full" style="width: 85%;"></div>
+                    </div>-->
+                        <div class="mb-6">
+                            <div class="flex justify-between mb-1">
+                                <span class="text-lg font-semibold  text-white font-[poppins]">C++</span>
+                                <span class="text-sm font-medium text-white font-[poppins]">85%</span>
+                            </div>
+                            <div class="w-full bg-gray-300 rounded-full h-4">
+                                <div class="bg-blue-500 h-4 rounded-full" style="width: 85%;"></div>
+                            </div>
+                        </div>
+                        <!-- Skill 4 -->
+                        <div class="mb-6">
+                            <div class="flex justify-between mb-1">
+                                <span class="text-lg font-semibold  text-white font-[poppins]">Python</span>
+                                <span class="text-sm font-medium text-white font-[poppins]">85%</span>
+                            </div>
+                            <div class="w-full bg-gray-300 rounded-full h-4">
+                                <div class="bg-purple-600 h-4 rounded-full" style="width: 85%;"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="bg-img shadow-lg container mx-auto px-4">
+                    <!-- First Row -->
+                    <h1 class=" font-[poppins] text-[30px] font-bold text-[#C8F31D] text-center pt-3">Tools</h1>
+                    <div class="flex flex-wrap justify-center gap-8 mt-5">
+                        <div class="bg-slate-200 w-[120px] text-center rounded-md p-2">
+                            <img src="https://ik.imagekit.io/ajql7av7t/figma_5968705.png" class="h-[100px]"
+                                alt="Figma" />
+                            <h1 class="text-lg font-semibold text-black font-[poppins]">Figma</h1>
+                        </div>
+                        <div class="bg-slate-200 w-[120px] text-center rounded-md p-2">
+                            <img src="https://ik.imagekit.io/ajql7av7t/social_14051861.png" class="h-[100px]"
+                                alt="GitHub" />
+                            <h1 class="text-lg font-semibold text-black font-[poppins]">GitHub</h1>
+                        </div>
+                    </div>
+
+                    <!-- Second Row -->
+                    <div class="flex flex-wrap justify-center gap-8 mt-5">
+                        <div class="bg-slate-200 w-[120px] text-center rounded-md p-2">
+                            <img src="https://ik.imagekit.io/ajql7av7t/palette.png" class="h-[100px]" alt="Canva" />
+                            <h1 class="text-lg font-semibold text-black font-[poppins]">Canva</h1>
+                        </div>
+                        <div class="bg-slate-200 w-[120px] text-center rounded-md p-2">
+                            <img src="https://shadowblood.gallerycdn.vsassets.io/extensions/shadowblood/tailwind-moon/3.0.2/1673948732518/Microsoft.VisualStudio.Services.Icons.Default"
+                                class="h-[100px]" alt="TailwindCSS" />
+                            <h1 class="text-lg font-semibold text-black font-[poppins]">TailwindCSS</h1>
+                        </div>
+                    </div>
+
+                    <!-- Description -->
+                    <div class="bg-slate-100 rounded-xl mt-[50px] mx-auto px-4 py-2 shadow-2xl max-w-xl">
+                        <p class="font-[poppins] text-[14px] text-center">
+                            A dedicated front-end developer with a passion for creating clean, responsive, and
+                            user-friendly websites.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+
+    </section>
+    <section class="bg-img h-[920px] py-5 mt-[70px] mb-10" id="project"> <!-- Increased bottom margin -->
+        <div class="2xl:container mx-auto">
+            <div class="w-[90%] mx-auto grid grid-cols-1">
+                <h1 class="font-[poppins] text-[30px] font-bold text-[#C8F31D] flex flex-row justify-center pb-5">My
+                    Projects</h1>
+            </div>
+
+            <div class="w-[90%] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                <!-- Card 1 -->
+                <div class="card space-y-4 shadow-2xl rounded-lg p-4">
+                    <img src="https://store-images.s-microsoft.com/image/apps.56161.9007199266246365.1d5a6a53-3c49-4f80-95d7-78d76b0e05d0.a3e87fea-e03e-4c0a-8f26-9ecef205fa7b"
+                        alt="card-image" class="h-[250px] w-full" />
+                    <p class="text-white font-[poppins] text-center">Streaming platform | Clone</p>
+                    <div class="flex justify-center gap-2 flex-wrap">
+                        <a href="https://66edabafef2baf1c3223fa7a--aquamarine-pegasus-ad404c.netlify.app/">
+                            <button class="flex bg-green-500 py-2 px-4 gap-2 rounded-full text-white">Live Link</button>
+                        </a>
+                        <a href="https://github.com/MahaOfcl14/netflix">
+                            <button class="flex bg-purple-500 py-2 px-4 gap-2 rounded-full text-white">Github
+                                link</button>
+                        </a>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="card space-y-5 shadow-lg rounded-lg p-4">
+                    <img src="https://img.freepik.com/free-vector/hands-holding-pencils-play-tic-tac-toe-people-drawing-crosses-noughts-simple-game-children-flat-vector-illustration-strategy-concept-banner-website-design-landing-web-page_74855-24786.jpg"
+                        alt="card-image" class="h-[250px] w-full" />
+                    <p class="text-white font-[poppins] text-center">Tic-Tac-Toe | Let's play</p>
+                    <div class="flex justify-center gap-2 flex-wrap">
+                        <a href="https://strong-peony-da81b1.netlify.app/">
+                            <button class="flex bg-green-500 py-2 px-4 gap-2 rounded-full text-white">Live Link</button>
+                        </a>
+                        <a href="https://github.com/MahaOfcl14/Tic-Tac-Toe">
+                            <button class="flex bg-purple-500 py-2 px-4 gap-2 rounded-full text-white">Github
+                                link</button>
+                        </a>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="card space-y-4 shadow-lg rounded-lg p-4">
+                    <img src="https://img.freepik.com/free-vector/safe-food-delivery-order-receive_23-2148549716.jpg"
+                        alt="card-image" class="h-[250px] w-full" />
+                    <p class="text-white font-[poppins] text-center">Food Store | Treat for Foodie</p>
+                    <div class="flex justify-center gap-2 flex-wrap">
+                        <a href="https://66eda51bf20b6d1f018097f8--animated-cupcake-edbc8d.netlify.app/">
+                            <button class="flex bg-green-500 py-2 px-4 gap-2 rounded-full text-white">Live Link</button>
+                        </a>
+                        <a href="https://github.com/MahaOfcl14/FoodMunch">
+                            <button class="flex bg-purple-500 py-2 px-4 gap-2 rounded-full text-white">Github
+                                link</button>
+                        </a>
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="card space-y-4 shadow-lg rounded-lg p-4">
+                    <img src="https://img.freepik.com/free-vector/gradients-weather-icons-apps_79603-1767.jpg"
+                        alt="card-image" class="h-[250px] w-full" />
+                    <p class="text-white font-[poppins] text-center">Weather App </p>
+                    <div class="flex justify-center gap-2 flex-wrap">
+                        <a href="https://resonant-brioche-b1cf46.netlify.app/">
+                            <button class="flex bg-green-500 py-2 px-4 gap-2 rounded-full text-white">Live Link</button>
+                        </a>
+                        <a href="https://github.com/MahaOfcl14/weatherApp">
+                            <button class="flex bg-purple-500 py-2 px-4 gap-2 rounded-full text-white">Github
+                                link</button>
+                        </a>
+                    </div>
+                </div>
+                <!-- Card 5 -->
+                <div class="card space-y-4 shadow-lg rounded-lg p-4">
+                    <img src="https://img.freepik.com/free-vector/flat-design-graphic-designer-logo-set_23-2148830627.jpg"
+                        alt="card-image" class="h-[250px] w-full" />
+                    <p class="text-white font-[poppins] text-center">Cosmetics Brand Logo</p>
+                    <div class="flex justify-center gap-2 flex-wrap">
+                        <a href="https://ik.imagekit.io/ajql7av7t/Maha%20Beauty%20Bliss.png">
+                            <button class="flex bg-green-500 py-2 px-4 gap-2 rounded-full text-white">Live Link</button>
+                        </a>
+                        
+                    </div>
+                </div>
+                <!-- Card 6 -->
+                <div class="card space-y-4 shadow-lg rounded-lg p-4">
+                    <img src="https://img.freepik.com/free-vector/flat-design-graphic-designer-logo-set_23-2148830627.jpg"
+                        alt="card-image" class="h-[250px] w-full" />
+                    <p class="text-white font-[poppins] text-center">Boutique Logo</p>
+                    <div class="flex justify-center gap-2 flex-wrap">
+                        <a href="https://ik.imagekit.io/ajql7av7t/Black%20Gold%20Elegant%20Illustration%20Fashion%20Brand%20Logo.png">
+                            <button class="flex bg-green-500 py-2 px-4 gap-2 rounded-full text-white">Live Link</button>
+                        </a>
+                        
+                    </div>
+                </div>
+                <!-- Card 7 -->
+                <div class="card space-y-4 shadow-lg rounded-lg p-4">
+                    <img src="https://img.freepik.com/free-vector/flat-design-graphic-designer-logo-set_23-2148830627.jpg"
+                        alt="card-image" class="h-[250px] w-full" />
+                    <p class="text-white font-[poppins] text-center">Trading Company Logo</p>
+                    <div class="flex justify-center gap-2 flex-wrap">
+                        <a href="https://ik.imagekit.io/ajql7av7t/Queen%20Bee.png">
+                            <button class="flex bg-green-500 py-2 px-4 gap-2 rounded-full text-white">Live Link</button>
+                        </a>
+                       
+                    </div>
+                </div>
+                <!-- Card 8 -->
+                <div class="card space-y-4 shadow-lg rounded-lg p-4">
+                    <img src="https://img.freepik.com/free-vector/flat-design-graphic-designer-logo-set_23-2148830627.jpg"
+                        alt="card-image" class="h-[250px] w-full" />
+                    <p class="text-white font-[poppins] text-center">Poster Designing</p>
+                    <div class="flex justify-center gap-2 flex-wrap">
+                        <a href="https://ik.imagekit.io/ajql7av7t/www.spicyhut.com.png">
+                            <button class="flex bg-green-500 py-2 px-4 gap-2 rounded-full text-white">Live Link</button>
+                        </a>
+                        
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section py-5 " id="contact Me">
+        <div class="2xl:container mx-auto">
+            <!--Safety Container-->
+            <div class="w-[80%] mx-auto grid grid-cols-1 md:grid-cols-2 ">
+
+                <div class="hidden md:block bg-img h-[500px] shadow-xl">
+
+                    <!-- Contact Form Section -->
+                    <div class=" pt-6 lg:pt-0">
+                        <form action="https://api.web3forms.com/submit" method="POST" class="flex flex-col gap-5">
+                            <h2
+                                class="font-[poppins] text-[#C8F31D] mt-8 font-medium text-[32px] lg:text-[40px]  ml-[150px]">
+                                Get in Touch</h2>
+                            <input type="hidden" name="access_key" value="e6b2cb23-ac5d-4797-8790-bc103c4ce24e">
+                            <input type="text" name="name" placeholder="Your Name"
+                                class="rounded-full w-full lg:w-[400px] h-[50px] pl-[25px] font-bold text-white bg-white  ml-[70px] placeholder-gray-400"
+                                required>
+                            <input type="email" name="email" placeholder="Your Email"
+                                class="rounded-full w-full lg:w-[400px] h-[50px] pl-[25px] font-bold text-white bg-white  ml-[70px] placeholder-gray-400"
+                                required>
+                            <textarea name="message" placeholder="Your Message"
+                                class="rounded-xl w-full lg:w-[400px] h-[140px] pl-[25px] pt-[15px] font-bold text-white bg-white ml-[70px] placeholder-gray-400"
+                                required></textarea>
+                            <button type="submit"
+                                class="bg-[#22C55E] font-bold text-white py-2 mx-[200px]  rounded-full">Submit</button>
+                    </div>
+
+                    </form>
+                </div>
+                <div class="hidden md:block">
+                    <img src="https://ik.imagekit.io/ajql7av7t/assets/right_img.png"
+                        class="w-[500px] pt-[50px] pl-[100px]" />
+
+                </div>
+            </div>
+        </div>
+
+        <!--Mobile-->
+        <div class="w-[80%] mx-auto grid grid-cols-1 md:grid-cols-2 ">
+
+            <div class="fixed md:hidden bg-img shadow-xl">
+
+                <!-- Contact Form Section -->
+                <div class="pt-6 lg:pt-0">
+                    <form action="https://api.web3forms.com/submit" method="POST" class=" gap-5">
+                        <h2 class="font-[poppins] text-[#C8F31D] font-medium text-[32px] lg:text-[40px]">Get in Touch
+                        </h2>
+                        <input type="hidden" name="access_key" value="e6b2cb23-ac5d-4797-8790-bc103c4ce24e">
+                        <input type="text" name="name" placeholder="Your Name"
+                            class="rounded-full w-full lg:w-[400px] h-[50px] pl-[25px] font-bold text-white bg-white placeholder-gray-400"
+                            required>
+                        <input type="email" name="email" placeholder="Your Email"
+                            class="rounded-full w-full lg:w-[400px] h-[50px] pl-[25px] font-bold text-white bg-gray-700 placeholder-gray-400"
+                            required>
+                        <textarea name="message" placeholder="Your Message"
+                            class="rounded-xl w-full lg:w-[400px] h-[140px] pl-[25px] pt-[15px] font-bold text-white bg-gray-700 placeholder-gray-400"
+                            required></textarea>
+                        <button type="submit"
+                            class="bg-[#22C55E] font-bold text-white py-2 px-6 rounded-full">Submit</button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    
+    <footer class="bg-[#42013B] py-10">
+        <div class="2xl:container mx-auto">
+            <div class="w-[90%] md:w-[60%] mx-auto grid grid-cols-1">
+                <div class="hidden md:hidden lg:block">
+                    <p class="font-medium text-[16px] leading-[16px] font-[poppins] text-center text-white">© 2024 by
+                        Mahalakshmi | All rights
+                        reserved</p>
+                </div>
+
+
+
+            </div>
+        </div>
+    </footer>
+
+
+
+</body>
+
+</html>
